@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Comensal.ListaComidas">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center|start"
+        >
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginLeft="20dp"
+            android:src="@drawable/ic_volver"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16dp"
+            android:layout_marginLeft="5dp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:text="@string/txt_Volver"/>
+
+        <ImageView
+            android:layout_marginLeft="140dp"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:src="@drawable/logo_negro"/>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/txtNombreCategoriaComida"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="25dp"
+        android:layout_marginLeft="30dp"
+        android:textColor="@color/colorapp"
+        android:textStyle="bold"
+        android:text="@string/txt_Sopas"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyComidas"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        />
+
+
+</LinearLayout>

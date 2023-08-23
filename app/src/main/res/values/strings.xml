@@ -1,0 +1,151 @@
+<resources>
+    <string name="app_name">OneTan_ExamenFinal</string>
+
+    <string name="nombredelaappcomensal">One-Tan</string>
+    <string name="nombredelaapprepartidor">Soy One-Tan</string>
+
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+
+    <string name="titulo_inicio">Inicio</string>
+    <string name="titulo_mi_cuenta">Mi Cuenta</string>
+    <string name="titulo_configuracion">Configuracion</string>
+
+
+    <string name="footer_splash">© Examen Final Carlos Campos</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_main_repartidor">MainActivity</string>
+
+
+    //botones
+    <string name="btninicia_sesion">Iniciar Sesion</string>
+    <string name="btninicia_siguiente">Siguiente</string>
+    <string name="btn_empezar">Empezar</string>
+
+    //textos
+    <string name="txt_registrate">Registrate</string>
+    <string name="txt_nuevaCuenta">Nueva Cuenta</string>
+    <string name="txt_Bienvenido">Bienvenidos a One-Tan</string>
+    <string name="txt_olvidastecontraseña">¿Olvidaste tu contraseña?</string>
+
+    //textos para conmfiguracion
+    <string name="txt_titleConfiguracion">Configuracion</string>
+    <string name="txt_Atencioncliente">Atencion al Cliente</string>
+    <string name="txt_Ayuda">Ayuda</string>
+    <string name="txt_TamañoFuente">Tamaño de la Fuente</string>
+    <string name="txt_CambiarIdioma">Cambiar Idioma</string>
+    <string name="txt_ReportarProblema">Reportar un Problema</string>
+    <string name="txt_PrivacidadSeguridad">Privacidad y Seguridad</string>
+    <string name="txt_Ahorrodatos">Ahorro de datos</string>
+    <string name="txt_ModoOscuro">Modo Oscuro</string>
+    <string name="txt_Trabajanosotros">Trabaja con nosotros</string>
+
+    <string name="txt_listo">¡Listo!</string>
+    <string name="txt_Tucuentaha">Tu cuenta ha</string>
+    <string name="txt_sidocread">sido creada</string>
+
+    <string name="txt_parrafobienvenida">Bienvenido a One -Tan, tus datos han
+                                             sido validados correctamente, haz click
+                                        en empezar para repartir ya!!</string>
+    <string name="txt_parrafobienvenida_comensal">Bienvenido a One -Tan, tus datos han
+                                            sido validados correctamente, haz click
+                                                en ingresar para disfrutar de la app</string>
+
+    //textos para conmfiguracion de idioa
+    <string name="txt_Idiomaaplicacion">Idioma de la aplicacion</string>
+    <string name="txt_Español">Español</string>
+    <string name="txt_idiomatelefono">(idioma del telefono)</string>
+    <string name="txt_English">English</string>
+    <string name="txt_Ingles">Ingles</string>
+
+
+    //textos para conmfiguracion de Tamaño de fuente
+    <string name="txt_TamFuente">Tamaño de Fuente</string>
+    <string name="txt_TextoMuestra">Texto de Muestra</string>
+    <string name="txt_VistaPrevia">Vista Previa</string>
+    <string name="txt_Predeterminado">Predeterminado</string>
+    <string name="txt_textoindicaciones">Aumenta o Reduce el tamaño del texto en pantalla</string>
+
+
+    //textos para conmfiguracion de temaOscuro
+    <string name="txt_TemaOscuro">Tema Oscuro</string>
+    <string name="txt_Desactivado">Desactivado</string>
+    <string name="txt_Activado">Activado</string>
+    <string name="txt_Sistemao">Sistema</string>
+    <string name="txt_textoTemaapp">Si se relecciona la aconfiguracion
+del sistema, One-Tan ajustará el
+aspecto utomáticamente en
+funcion de la configuración
+del sistema del dispositivo.</string>
+
+    //textos para Mi cuenta
+    <string name="txt_MiCuenta">Mi Cuenta</string>
+    <string name="txt_Nombre">Nombre</string>
+    <string name="txt_myNombreUsuario">Juan Eduardo Carlos Campos</string>
+
+    <string name="txt_textoinfomicuenta">Este nombre no es un nombre de usuario
+ni un PIN. Este nombre sera visible para
+los miembros de One-Tan.</string>
+    <string name="txt_Telefono">Telefono</string>
+    <string name="txt_numTelefonico">+51 914 266 082</string>
+    <string name="txt_CerrarSesion">Cerrar Sesion</string>
+
+
+    //paguina inicio
+    <string name="txt_Categorias">Categorias</string>
+    <string name="txt_Platillospopulares">¡Platillos populares!</string>
+    <string name="txt_Sopas">Sopas</string>
+    <string name="txt_Tallarines">Tallarines</string>
+    <string name="txt_PArroz">Arroz</string>
+    <string name="txt_Bebidas">Bebidas</string>
+    <string name="txt_QueestasBuscando">¿Que estas buscando?</string>
+
+    <string name="txt_frejolito">Arroz Chaufa con Frejolito Chino</string>
+    <string name="txt_PolloSabores">Pollo 5 Sabores</string>
+    <string name="txt_ChaufaCarneChancho">Arroz Chaufa con Carne de Chancho</string>
+    <string name="txt_TallarinSaltado">Tallarin Saltado con Lomo Fino</string>
+
+
+    <string-array name="list_spiner">
+        <item>DNI</item>
+        <item>RUC</item>
+        <item>Carnet de Extranjeria</item>
+    </string-array>
+
+
+    //textos para el comensal
+    <string name="txt_Volver">Volver</string>
+    <string name="txt_Comprar">Comprar</string>
+    <string name="title_activity_ubicaciondel_comensal">Map</string>
+    <string name="txt_btn_continuar">continuar</string>
+    <string name="recibireyo">¡Recibiré yo!</string>
+    <string name="recibiraotrapersona">¡Recibirá otra persona!</string>
+
+    <string name="txtapellidonombre">Apellidos y Nombres</string>
+    <string name="txtCelular">Celular</string>
+    <string name="txtResumen">¡Resumen!</string>
+    <string name="txtcantidad">cantidad</string>
+    <string name="txtTotalpagard">Total a pagar</string>
+    <string name="txtConfirmarPedido">Confirmar Pedido</string>
+    <string name="txtQuienrecibirapedido">¿Quien recibira el pedido?</string>
+    <string name="txtPedidoRegistradoExitosamente">¡Pedido Registrado Exitosamente!</string>
+    <string name="txtAtentoteléfono">Atento a su teléfono movíl, el repartidor lo estará llamando</string>
+    <string name="txt_Aceptar">Aceptar</string>
+
+    <string-array name="quien_recibe">
+        <item>¡Recibo yo!</item>
+        <item>¡Recibe otra persona!</item>
+
+    </string-array>
+
+
+    //----------------------------------------------------------------esto es para la app del
+    repartidor
+
+    <string name="ListaPedidos">Lista de Pedidos por entregar</string>
+    <string name="title_activity_detalle_para_entregar">Map</string>
+    <string name="title_activity_mejor_ruta">Map</string>
+</resources>

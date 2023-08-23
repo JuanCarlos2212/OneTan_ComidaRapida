@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Loginpaso1">
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        app:srcCompat="@drawable/logo_inici1"
+
+
+        ></ImageView>
+    <View  android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:background="@drawable/degradadoinicio"
+        ></View>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="top|center"
+
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            >
+
+            <ImageView
+                android:id="@+id/SplashLogo"
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:layout_gravity="center"
+                app:srcCompat="@drawable/logo_blanco"></ImageView>
+
+            <Button
+                android:id="@+id/btnIniciarSesionLog1"
+                android:layout_width="290dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:background="@drawable/btnredondeados"
+                android:text="@string/btninicia_sesion"
+                android:layout_marginTop="340dp"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large"></Button>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginBottom="50dp"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:text="¿No tienes una cuenta?"/>
+            <TextView
+                android:id="@+id/txtRegistrateLog1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#FF0000"
+                android:layout_marginLeft="5dp"
+                android:textSize="16dp"
+                android:text="@string/txt_registrate"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</FrameLayout>

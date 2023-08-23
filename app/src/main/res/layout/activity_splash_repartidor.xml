@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Splash">
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        app:srcCompat="@drawable/splash"
+
+
+        ></ImageView>
+    <View  android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:background="@drawable/degradado_splash"
+        ></View>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="top|center"
+
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            >
+
+            <ImageView
+                android:id="@+id/SplashLogorepartidor"
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:layout_gravity="center"
+                app:srcCompat="@drawable/logo_splas_repartidor"></ImageView>
+
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/txtFooterrepartidor"
+            android:layout_width="match_parent"
+            android:layout_marginBottom="50dp"
+            android:layout_height="wrap_content"
+            android:text="@string/footer_splash"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:gravity="center"
+
+            ></TextView>
+    </LinearLayout>
+
+</FrameLayout>

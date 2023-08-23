@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.onetan.carlosevalparcial">
+    <!--
+         The ACCESS_COARSE/FINE_LOCATION permissions are not required to use
+         Google Maps Android API v2, but you must specify either coarse or fine
+         location permissions for the "MyLocation" functionality.
+    -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.MANAGE_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.OneTan_ExamenFinal"
+        android:usesCleartextTraffic="true">
+        <activity android:name=".Comensal.DetalleParaGuardarPedido"></activity>
+        <activity android:name=".Repartidor.TomarFotografia" />
+        <!--
+             The API key for Google Maps-based APIs is defined as a string resource.
+             (See the file "res/values/google_maps_api.xml").
+             Note that the API key is linked to the encryption key used to sign the APK.
+             You need a different API key for each encryption key, including the release key that is used to
+             sign the APK for publishing.
+             You can define the keys for the debug and release targets in src/debug/ and src/release/.
+        -->
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+
+        <activity
+            android:name=".Repartidor.MejorRuta"
+            android:label="@string/title_activity_mejor_ruta" />
+        <activity
+            android:name=".Repartidor.DetalleParaEntregar"
+            android:label="@string/title_activity_detalle_para_entregar" />
+
+        <meta-data
+            android:name="com.google.android.actions"
+            android:resource="@xml/file_paths" />
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="com.onetan.carlosevalparcial.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+
+        <activity android:name=".Comensal.SegundaPersona" />
+        <activity
+            android:name=".Comensal.UbicaciondelComensal"
+            android:exported="true"
+            android:label="@string/title_activity_ubicaciondel_comensal" />
+        <activity android:name=".Comensal.DetalledeComida" />
+        <activity android:name=".Comensal.ListaComidas" />
+        <activity
+            android:name=".ConfiguracionTamFuente"
+            android:exported="true" />
+        <activity android:name=".ConfiguracionTemaOscuro" />
+        <activity
+            android:name=".ConfiguracionIdioma"
+            android:exported="true" />
+        <activity android:name=".Comensal.RegistroExitosoComensal" />
+        <activity android:name=".Repartidor.RegistroExitoso" />
+        <activity android:name=".IniciarSesion" />
+        <activity android:name=".RegistrarsePaso2" />
+        <activity android:name=".RegistrarsePaso1" />
+        <activity android:name=".Loginpaso1" />
+        <activity
+            android:name=".MainActivityRepartidor"
+            android:exported="true"
+            android:label="@string/title_activity_main_repartidor">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".SplashRepartidor"
+            android:exported="true"
+            android:icon="@mipmap/ic_logo_app_repartidor"
+            android:label="@string/nombredelaapprepartidor"
+            android:roundIcon="@mipmap/ic_logo_app_repartidor_round"
+            android:taskAffinity="com.onetan.carlosevalparcial.SplashRepartidor">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Splash"
+            android:exported="true"
+            android:icon="@mipmap/ic_logo_app_comensal"
+            android:label="@string/nombredelaappcomensal"
+            android:roundIcon="@mipmap/ic_logo_app_comensal_round"
+            android:taskAffinity="com.onetan.carlosevalparcial.Splash">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name" />
+    </application>
+
+</manifest>

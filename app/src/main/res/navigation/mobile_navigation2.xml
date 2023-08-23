@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation2"
+    app:startDestination="@+id/nav_inicio_repartidor">
+
+    <fragment
+        android:id="@+id/nav_inicio_repartidor"
+        android:name="com.onetan.carlosevalparcial.ui.inicio_repartidor.InicioRepartidorFragment"
+        android:label="@string/titulo_inicio"
+        tools:layout="@layout/fragment_inicio_repartidor" />
+
+    <fragment
+        android:id="@+id/nav_micuenta_repartidor"
+        android:name="com.onetan.carlosevalparcial.ui.micuenta_repartidor.MicuentaRepartidorFragment"
+        android:label="@string/titulo_mi_cuenta"
+        tools:layout="@layout/fragment_micuenta_repartidor" />
+
+    <fragment
+        android:id="@+id/nav_configuracion_repartidor"
+        android:name="com.onetan.carlosevalparcial.ui.configuracion_repartidor.ConfiguracionRepartidorFragment"
+        android:label="@string/txt_titleConfiguracion"
+        tools:layout="@layout/fragment_configuracion_repartidor" />
+</navigation>

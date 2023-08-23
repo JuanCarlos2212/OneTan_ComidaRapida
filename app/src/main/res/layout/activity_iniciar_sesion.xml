@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".IniciarSesion">
+
+    <ImageView
+        android:scaleType="centerCrop"
+        android:layout_width="match_parent"
+        android:layout_height="280dp"
+        android:src="@drawable/imagencuadrado">
+
+    </ImageView>
+    <View  android:layout_height="280dp"
+        android:layout_width="match_parent"
+        android:background="@drawable/degradadoinicio"
+        ></View>
+
+    <ImageView
+        android:id="@+id/SplashLogo"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_gravity="center"
+        android:layout_marginBottom="260dp"
+        app:srcCompat="@drawable/logo_blanco"></ImageView>
+
+    <FrameLayout
+
+        android:layout_marginTop="200dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginBottom="28dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/layout_redondeado"
+        android:elevation="30dp"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_margin="12dp">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/txt_Bienvenido"
+                android:gravity="center"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:layout_marginTop="60dp"
+                android:textColor="@color/black"
+                />
+
+
+            <EditText
+                android:id="@+id/edtCorreoElecGo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="40dp"
+                android:hint="Correo Electronico"
+                />
+
+            <EditText
+            android:id="@+id/edtContrasenaGo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+                android:inputType="textPassword"
+            android:layout_margin="40dp"
+            android:hint="Contraseña"
+            />
+            <Button
+                android:id="@+id/btniniciarsesionGo"
+                android:layout_width="200dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:background="@drawable/btnredondeados"
+                android:text="@string/btninicia_sesion"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large"></Button>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/txt_olvidastecontraseña"
+                android:gravity="center"
+                android:textSize="15dp"
+                android:textColor="@color/black"
+                />
+        </LinearLayout>
+
+    </FrameLayout>
+</FrameLayout>

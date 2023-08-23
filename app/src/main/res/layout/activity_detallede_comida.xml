@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Comensal.DetalledeComida">
+
+    
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="360dp"
+        >
+
+        <ImageView
+            android:scaleType="fitXY"
+            android:id="@+id/imgComidaDetalle"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/img_base">
+
+        </ImageView>
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/ic_cerrar"
+            android:layout_margin="10dp"/>
+    </FrameLayout>
+    
+    <TextView
+        android:id="@+id/txtnombreComidaDetalle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="30dp"
+        android:text="Nombre Comida"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:textColor="@color/black" />
+
+    <TextView
+        android:id="@+id/txtDescripDetalle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:text="toda la descripcion"
+        android:textSize="16dp"
+        android:textColor="@color/black" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="30dp"
+            android:text="S/"
+            android:textStyle="bold"
+            android:textSize="16dp"
+            android:textColor="@color/black" />
+        <TextView
+            android:id="@+id/txtPrecioDetalle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:layout_marginRight="30dp"
+            android:text="Precio"
+            android:textStyle="bold"
+            android:textSize="16dp"
+            android:textColor="@color/black" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_margin="30dp">
+
+        <androidx.cardview.widget.CardView
+            android:elevation="10dp"
+            android:layout_margin="10dp"
+            android:padding="10dp"
+            app:cardCornerRadius="5dp"
+            android:layout_width="100dp"
+            android:layout_height="30dp">
+            <LinearLayout
+
+                android:layout_width="100dp"
+                android:layout_height="30dp"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:orientation="horizontal"
+                >
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/ic_menos"/>
+                <TextView
+                    android:layout_width="30dp"
+                    android:layout_height="wrap_content"
+                    android:textSize="22dp"
+                    android:text="1"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    />
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/ic_mas"/>
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+        <Button
+            android:id="@+id/btnComprarDetalle"
+            android:layout_width="150dp"
+            android:layout_height="46dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="30dp"
+            android:background="@drawable/btnredondeados"
+            android:text="@string/txt_Comprar"
+            android:textColor="@color/white"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"></Button>
+    </LinearLayout>
+    
+</LinearLayout>

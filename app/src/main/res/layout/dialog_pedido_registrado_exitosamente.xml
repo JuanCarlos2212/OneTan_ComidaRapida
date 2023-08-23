@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="280dp"
+    android:layout_margin="10dp"
+    android:gravity="center"
+    app:cardCornerRadius="10dp"
+    android:layout_height="220dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/txtPedidoRegistradoExitosamente"
+            android:textSize="20dp"
+            android:layout_margin="20dp"
+            android:textColor="@color/black"
+            android:gravity="center"
+            android:textStyle="bold"/>
+        <!--        android:textAllCaps="true" esto es para hacer mayuscula-->
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_margin="20dp"
+            android:text="@string/txtAtentoteléfono"/>
+
+        <Button
+            android:id="@+id/btnAceptarPedidoExitosoyo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/btnredondeados"
+            android:text="@string/txt_Aceptar"
+            android:layout_gravity="center"></Button>
+
+    </LinearLayout>
+
+
+
+</androidx.cardview.widget.CardView>
